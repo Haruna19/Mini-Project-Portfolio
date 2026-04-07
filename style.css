@@ -23,18 +23,18 @@ body{
 }
 
 header{
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
+    background-color: black;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-bottom: 1px solid rgba(235, 161, 14, 0.2);
 }
 
 .logo{
@@ -72,7 +72,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    padding-top: 10rem;
     gap: 8rem;
     background-color: black;
 }
@@ -186,4 +186,81 @@ span{
     81%, 100%{
         content: "Throne of World";
     }
+}
+
+.about{
+    background-color: black;
+    background-image: url('phainon/phainon_8.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.about-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9%;
+    font-size: 2.2rem;
+}
+
+.about-content p{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.lores{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 5rem 9%;
+}
+
+.lores-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.lores-content{
+    font-size: 2.2rem;
+    width: 50%;
+}
+
+.lores-content p{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.lores-img{
+    border-radius: 50%;
+}
+
+.lores-img img{
+    position: relative;
+    width: 20vw;
+    border-radius: 50px;
+    box-shadow: 0 0 25px solid #EBA10E;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.lores-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
 }
